@@ -67,12 +67,16 @@
     overflow-x: auto;
   }
   table {
-    min-width: 600px;
+    min-width: 100%;
+    min-width: unset;
     font-size: 12px;
+    table-layout: auto;
   }
   th, td {
     padding: 4px;
     font-size: 12px;
+    white-space: normal;
+    word-break: break-word;
   }
   input[type="number"] {
     width: 35px;
