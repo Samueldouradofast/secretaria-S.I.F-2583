@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="./index.css">
+  <title>Registro por Parte do Corpo</title>
+</head>
+<body>
+
+<h2>Registro por Parte do Corpo</h2>
+
+<div class="tabela-container">
+  <table>
+    <thead>
+      <tr>
+        <th>Parte do Corpo</th>
+        <th>Restrita Alt.</th>
+        <th>Cont. Gástrica</th>
+        <th>Cont. Não Gástrica</th>
+        <th>Parasita. N.Zoon.</th>
+        <th>Total</th>
+      </tr>
+    </thead>
+    <tbody id="corpo-tabela">
+      <!-- Linhas preenchidas -->
+       <tr><td>Úbere</td><td><input type="number" value="0" class="input" data-linha="0" data-col="1"></td><td><input type="number" value="0" class="input" data-linha="0" data-col="2"></td><td><input type="number" value="0" class="input" data-linha="0" data-col="3"></td><td><input type="number" value="0" class="input" data-linha="0" data-col="4"></td><td id="total-linha-0">0</td></tr>
+
+       <tr><td>Patas</td><td><input type="number" value="0" class="input" data-linha="1" data-col="1"></td><td><input type="number" value="0" class="input" data-linha="1" data-col="2"></td><td><input type="number" value="0" class="input" data-linha="1" data-col="3"></td><td><input type="number" value="0" class="input" data-linha="1" data-col="4"></td><td id="total-linha-1">0</td></tr>
+
+      <tr><td>Lábios</td><td><input type="number" value="0" class="input" data-linha="2" data-col="1"></td><td><input type="number" value="0" class="input" data-linha="2" data-col="2"></td><td><input type="number" value="0" class="input" data-linha="2" data-col="3"></td><td><input type="number" value="0" class="input" data-linha="2" data-col="4"></td><td id="total-linha-2">0</td></tr>
+
+      <tr><td>Cabeça</td><td><input type="number" value="0" class="input" data-linha="3" data-col="1"></td><td><input type="number" value="0" class="input" data-linha="3" data-col="2"></td><td><input type="number" value="0" class="input" data-linha="3" data-col="3"></td><td><input type="number" value="0" class="input" data-linha="3" data-col="4"></td><td id="total-linha-3">0</td></tr>
+
+      <tr><td>Língua</td><td><input type="number" value="0" class="input" data-linha="4" data-col="1"></td><td><input type="number" value="0" class="input" data-linha="4" data-col="2"></td><td><input type="number" value="0" class="input" data-linha="4" data-col="3"></td><td><input type="number" value="0" class="input" data-linha="4" data-col="4"></td><td id="total-linha-4">0</td></tr>
+
+      <tr><td>Estômago</td><td><input type="number" value="0" class="input" data-linha="5" data-col="1"></td><td><input type="number" value="0" class="input" data-linha="5" data-col="2"></td><td><input type="number" value="0" class="input" data-linha="5" data-col="3"></td><td><input type="number" value="0" class="input" data-linha="5" data-col="4"></td><td id="total-linha-5">0</td></tr>
+
+      <tr><td>Intestino</td><td><input type="number" value="0" class="input" data-linha="6" data-col="1"></td><td><input type="number" value="0" class="input" data-linha="6" data-col="2"></td><td><input type="number" value="0" class="input" data-linha="6" data-col="3"></td><td><input type="number" value="0" class="input" data-linha="6" data-col="4"></td><td id="total-linha-6">0</td></tr>
+
+      <tr><td>Esôfago</td><td><input type="number" value="0" class="input" data-linha="7" data-col="1"></td><td><input type="number" value="0" class="input" data-linha="7" data-col="2"></td><td><input type="number" value="0" class="input" data-linha="7" data-col="3"></td><td><input type="number" value="0" class="input" data-linha="7" data-col="4"></td><td id="total-linha-7">0</td></tr>
+
+      <tr><td>Baço</td><td><input type="number" value="0" class="input" data-linha="8" data-col="1"></td><td><input type="number" value="0" class="input" data-linha="8" data-col="2"></td><td><input type="number" value="0" class="input" data-linha="8" data-col="3"></td><td><input type="number" value="0" class="input" data-linha="8" data-col="4"></td><td id="total-linha-8">"0"</td></tr>
+
+      <tr><td>Fígado</td><td><input type="number" value= 0 class="input" data-linha="9" data-col="1"></td><td><input type="number" value="0" class="input" data-linha="9" data-col="2"></td><td><input type="number" value="0" class="input" data-linha="9" data-col="3"></td><td><input type="number" value="0" class="input" data-linha="9" data-col="4"></td><td id="total-linha-9">0</td></tr>
+
+      <tr><td>Pulmão</td><td><input type="number" value="0" class="input" data-linha="10" data-col="1"></td><td><input type="number" value="0" class="input" data-linha="10" data-col="2"></td><td><input type="number" value="0" class="input" data-linha="10" data-col="3"></td><td><input type="number" value="0" class="input" data-linha="10" data-col="4"></td><td id="total-linha-10">0</td></tr>
+
+      <tr><td>Coração</td><td><input type="number" value="0" class="input" data-linha="11" data-col="1"></td><td><input type="number" value="0" class="input" data-linha="11" data-col="2"></td><td><input type="number" value="0" class="input" data-linha="11" data-col="3"></td><td><input type="number" value="0" class="input" data-linha="11" data-col="4"></td><td id="total-linha-11">0</td></tr>
+
+      <tr><td>Cauda</td><td><input type="number" value="0" class="input" data-linha="12" data-col="1"></td><td><input type="number" value="0" class="input" data-linha="12" data-col="2"></td><td><input type="number" value="0" class="input" data-linha="12" data-col="3"></td><td><input type="number" value="0" class="input" data-linha="12" data-col="4"></td><td id="total-linha-12">0</td></tr>
+
+      <tr><td>Carcaça</td><td><input type="number" value="0" class="input" data-linha="13" data-col="1"></td><td><input type="number" value="0" class="input" data-linha="13" data-col="2"></td><td><input type="number" value="0" class="input" data-linha="13" data-col="3"></td><td><input type="number" value="0" class="input" data-linha="13" data-col="4"></td><td id="total-linha-13">0</td></tr>
+
+      <tr><td>Diafragma</td><td><input type="number" value="0" class="input" data-linha="14" data-col="1"></td><td><input type="number" value="0" class="input" data-linha="14" data-col="2"></td><td><input type="number" value="0" class="input" data-linha="14" data-col="3"></td><td><input type="number" value="0" class="input" data-linha="14" data-col="4"></td><td id="total-linha-14">0</td></tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td><strong>TOTAL</strong></td>
+        <td id="total-col-1">0</td>
+        <td id="total-col-2">0</td>
+        <td id="total-col-3">0</td>
+        <td id="total-col-4">0</td>
+        <td id="total-geral">0</td>
+      </tr>
+    </tfoot>
+  </table>
+</div>
+
+<button id="btn-limpar">🔄 Limpar</button>
+
+</body>
+ <script src="index.js"></script>
+</html>
