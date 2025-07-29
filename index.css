@@ -1,17 +1,21 @@
-  body {
+  body, html {
       font-family: Arial, sans-serif;
-      padding: 20px;
+      padding: 0px;
       background-color: #f9f9f9;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      margin: 0px;
+      overflow-x: hidden;
+      padding-bottom: 0;
+      margin-bottom: 0;
+      
     }
     h2 {
       text-align: center;
     }
     .tabela-container {
       width: 100%;
-      overflow-x: auto;
+      box-sizing: border-box;
+      padding: 0;
+      margin-bottom: 0;
     }
     table {
       width: 100%;
@@ -31,6 +35,7 @@
     th:nth-child(3) { background-color: #ff9800; color: white; }
     th:nth-child(4) { background-color: #ffeb3b; color: black; }
     th:nth-child(5) { background-color: #4caf50; color: white; }
+
     input[type="number"] {
       width: 70px;
       text-align: center;
@@ -44,77 +49,57 @@
     }
     #btn-limpar {
       margin-top: 20px;
-      font-size: 16px;
+      font-size: 13px;
       padding: 10px 20px;
       border: none;
-      background-color: #f1f1f1;
+      background-color: #8f0c0c;
       border-radius: 8px;
       cursor: pointer;
+      margin-bottom: 0;
+      display: block;
     }
-    #btn-limpar:hover {
-      background-color: #e0e0e0;
-    }
+    
+    
     input[type="number"]::-webkit-outer-spin-button,
     input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0; 
 }
 
-/* Responsividade para mobile */
-@media (max-width: 768px) {
-  .tabela-container {
-    width: 100vw;
-    overflow-x: auto;
-  }
-  table {
-    min-width: 100%;
-    min-width: unset;
-    font-size: 12px;
-    table-layout: auto;
-  }
-  th, td {
-    padding: 4px;
-    font-size: 12px;
-    white-space: normal;
-    word-break: break-word;
-  }
-  input[type="number"] {
-    width: 35px;
-    font-size: 12px;
-  }
-  #btn-limpar {
-    font-size: 14px;
-    padding: 8px 12px;
-  }
-}
+@media screen and (max-width: 768px) {
+   .tabela-container {
+      overflow-x: hidden;
+    }
+    table {
+      width: 100%;
+      table-layout: fixed;
+    }
+    th, td {
+      padding: 1px;
+      font-size: 11px;
+      text-align: center;
+      word-break: break-word;
+      white-space: normal;
+      padding: 2px;
+    }
+    input[type="number"] {
+      width: 40px;
+      font-size: 12px;
+      padding: 1px;
+    }
 
-/* Largura maior para totais */
-td[id^="total-linha"], td[id^="total-col"], #total-geral {
-  min-width: 60px;
-  font-weight: bold;
-  font-size: 16px;
-}
+    td[id^="total-linha"], td[id^="total-col"], #total-geral {
+    min-width: 60px;
+    font-weight: bold;
+    font-size: 11px;
+ }
+   #btn-limpar{
+   background-color: rgb(150, 160, 160);
+   margin-left: 100px;
+  }
+  body, html {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  }
 
-/* Responsividade para mobile */
-@media (max-width: 600px) {
-  .tabela-container {
-    max-width: 100vw;
-    overflow-x: auto;
-  }
-  table {
-    min-width: 600px;
-    font-size: 12px;
-  }
-  th, td {
-    padding: 4px;
-    font-size: 12px;
-  }
-  td[id^="total-linha"], td[id^="total-col"], #total-geral {
-    min-width: 45px;
-    font-size: 13px;
-  }
-  input[type="number"] {
-    width: 35px;
-    font-size: 12px;
-  }
 }
