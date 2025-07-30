@@ -1,7 +1,7 @@
   body, html {
       font-family: Arial, sans-serif;
       padding: 0px;
-      background-color: #f9f9f9;
+      background-color: #da3098;
       margin: 0px;
       overflow-x: hidden;
       padding-bottom: 0;
@@ -70,6 +70,10 @@
    .tabela-container {
       overflow-x: hidden;
     }
+    h2{
+     margin-top: 70px;
+    }
+
     table {
       width: 100%;
       table-layout: fixed;
@@ -83,7 +87,7 @@
     
     }
     td{
-      font-size: 12px;
+      font-size: 14px;
       font-weight: bold;
     }
 
@@ -100,8 +104,10 @@
     font-size: 15px;
  }
    #btn-limpar{
-   background-color: rgb(150, 160, 160);
-   margin-left: 100px;
+   background-color: rgb(215, 231, 231);
+   margin-left: 130px;
+   font-size: 15px;
+   font-weight: bold;
   }
   body, html {
   padding-bottom: 0;
