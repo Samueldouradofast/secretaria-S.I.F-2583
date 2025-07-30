@@ -1,7 +1,7 @@
   body, html {
       font-family: Arial, sans-serif;
       padding: 0px;
-      background-color: #da3098;
+      background-color: #463840;
       margin: 0px;
       overflow-x: hidden;
       padding-bottom: 0;
@@ -94,8 +94,9 @@
     
     input[type="number"] {
       width: 40px;
-      font-size: 15px;
+      font-size: 16px;
       padding: 1px;
+      font-weight: bold;
     }
 
     td[id^="total-linha"], td[id^="total-col"], #total-geral {
