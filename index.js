@@ -11,14 +11,16 @@
         totaisColuna[col - 1] += valor;
         totalLinha += valor;
       }
-      document.getElementById(`total-linha-${i}`).textContent = totalLinha;
+      })
+
+     /* document.getElementById(`total-linha-${i}`).textContent = totalLinha;
       totalGeral += totalLinha;
-    });
+    });*/
 
     totaisColuna.forEach((total, i) => {
       document.getElementById(`total-col-${i + 1}`).textContent = total;
     });
-    document.getElementById("total-geral").textContent = totalGeral;
+    //document.getElementById("total-geral").textContent = totalGeral;
   }
 
  document.querySelectorAll(".input").forEach(input => {
